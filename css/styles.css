@@ -1,29 +1,38 @@
-
-
 /* Fonts */
 /* Resort Sans Bold */
 @font-face {
-  font-family: 'Resort Sans';
-  src: url('/css/RESORT-SANSBOLD.TTF') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'Resort Sans';
+    src: url('/css/RESORT-SANSBOLD.TTF') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
 /* Zalorine Regular */
 @font-face {
-  font-family: 'Zalorine';
-  src: url('/css/ZALORINE.OTF') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'Zalorine';
+    src: url('/css/ZALORINE.OTF') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 body {
-  font-family: 'Zalorine', sans-serif;
+    font-family: 'Zalorine', sans-serif;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 #ball,
 .tt-main-menu,
 .ph-caption-title-ghost,
@@ -57,85 +66,134 @@ body {
 .tt-scrolling-text,
 #blog-list.bli-compact .bli-info::before,
 .blog-interactive-item::before {
-	font-family: 'Resort Sans', sans-serif;
+    font-family: 'Resort Sans', sans-serif;
     font-weight: bold;
 }
 
-.font-z{
+.font-z {
     font-family: 'Zalorine', sans-serif !important;
 }
-.font-r{
+
+.font-r {
     font-family: 'Resort Sans', sans-serif !important;
     font-weight: bold !important;
 }
 
 /* _______________________________________________________________________ S T A R T -- H E R E _______________________________________________________________________________ */
 
-.max-width-50-per{
+.max-width-50-per {
     max-width: 50% !important;
 }
-.d-none{
+
+.d-none {
     display: none !important;
 }
-.text--md{
+
+.text--md {
     font-size: calc(40px + 0.1vw) !important;
 }
-.text--lg{
+
+.text--lg {
     font-size: calc(55px + 0.1vw) !important;
 }
-.text--uppercase{
+
+.text--uppercase {
     text-transform: uppercase !important;
 }
-.img-200px{
+
+.img-200px {
     width: 200px !important;
+    object-fit: contain;
+    object-position: center;
+    padding: 1.5rem;
 }
-.text--center{
+
+.img-100px {
+    width: 100px !important;
+    object-fit: contain;
+    object-position: center;
+    padding: 1rem;
+}
+
+.img-50px {
+    width: 50px !important;
+    object-fit: contain;
+    object-position: center;
+    padding: .5rem;
+}
+
+.text--center {
     text-align: center !important;
 }
-.text--start{
+
+.text--start {
     text-align: start !important;
 }
-.left--0{
+
+.left--0 {
     left: 0 !important;
 }
-.max-width-inherit{
+
+.max-width-inherit {
     max-width: inherit !important;
 }
-.d-flex{
+
+.d-flex {
     display: flex !important;
 }
-.flex-column{
+
+.flex-column {
     flex-direction: column !important;
 }
-.justify-content-center{
+
+.justify-content-center {
     justify-content: center !important;
 }
-.align-items-center{
+
+.align-items-center {
     align-items: center !important;
 }
-.align-self-start{
+
+.align-self-start {
     align-self: flex-start !important;
 }
-.align-self-center{
+
+.align-self-center {
     align-self: center !important;
 }
-.align-self-end{
+
+.align-self-end {
     align-self: flex-end !important;
 }
-.tt-portfolio-slider-caption.psc-center .caption-box{
+
+.tt-portfolio-slider-caption.psc-center .caption-box {
     padding: .5em !important;
     top: 70% !important;
 }
-.border{
+
+.border {
     border: 25px;
     border-color: aqua;
 }
-.margin-top-25vh{
-    margin-top: 25vh !important;
+
+.margin-top-25vh {
+    margin-top: 25vh;
 }
-.text--large{
-    font-size: 3.5rem !important;
+
+.text--large {
+    font-size: 3.5rem;
 }
-.text--xlarge{
-    font-size: 7rem !important;
+
+.text--xlarge {
+    font-size: 7rem;
+}
+
+@media (max-width: 767px) {
+    .text--large {
+        font-size: calc(25px + 1.5vw) !important;
+    }
+
+    .text--xlarge {
+        font-size: calc(32px + 1.5vw) !important;
+    }
 }
