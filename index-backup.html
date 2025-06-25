@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<!-- Libs and Plugins CSS -->
+	<link rel="stylesheet" href="js/normalize/normalize.min.css">
+	<!-- Normalize CSS (https://necolas.github.io/normalize.css/) -->
+	<link rel="stylesheet" href="js/fontawesome/css/fontawesome-all.min.css">
+	<!-- Font Icons CSS (https://fontawesome.com) Free version! -->
+	<link rel="stylesheet" href="js/swiper/css/swiper-bundle.min.css">
+	<!-- Swiper CSS (https://swiperjs.com/) -->
+	<link rel="stylesheet" href="js/lightgallery/css/lightgallery.min.css">
+	<!-- lightGallery CSS (http://sachinchoolur.github.io/lightGallery) -->
+
+	<!-- Template master CSS -->
+	<link rel="stylesheet" href="css/helper.css">
+	<link rel="stylesheet" href="css/theme.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body id="body" class="tt-transition tt-boxed tt-smooth-scroll tt-magic-cursor">
+	<main id="body-inner">
+
+		<!-- Begin page transition (do not remove!!!) 
+			=========================== -->
+		<div id="page-transition">
+			<div class="ptr-overlay"></div>
+			<div class="ptr-preloader">
+				<div class="ptr-prel-content">
+					<!-- Hint: You may need to change the img height and opacity to match your logo type. You can do this from the "theme.css" file (find: ".ptr-prel-image"). -->
+					<img src="images/my-images/landmark-logo.png" class="ptr-prel-image tt-logo-light" alt="Logo">
+				</div> <!-- /.ptr-prel-content -->
+			</div> <!-- /.ptr-preloader -->
+		</div>
+		<!-- End page transition -->
+
+		<!-- Begin magic cursor 
+			======================== -->
+		<div id="magic-cursor">
+			<div id="ball"></div>
+		</div>
+		<!-- End magic cursor -->
+
+		<!-- Begin noise background -->
+		<div class="bg-noise"></div>
+		<!-- End noise background -->
+
+		<!-- *****************************************
+			*********** Begin scroll container *********** 
+			****************************************** -->
+		<div id="scroll-container">
+
+			<!-- ===================
+				///// Begin header /////
+				========================
+				* Use class "tt-header-fixed" to set header to fixed position.
+				-->
+			<header id="tt-header" class="tt-header-fixed">
+				<div class="tt-header-inner">
+					<!-- add/remove class "tt-wrap" to enable/disable element boxed layout (class "tt-boxed" is required in <body> tag!). Note: additionally you can use prepared helper class "max-width-*" to add custom width to "tt-wrap". Example: "max-width-1500" (class "tt-wrap" is still required!). More info about helper classes can be found in the file "helper.css". -->
+
+					<div class="tt-header-col">
+
+						<!-- Begin logo 
+							================ -->
+						<div class="tt-logo">
+							<a href="index.html">
+								<!-- Hint: You may need to change the img height to match your logo type. You can do this from the "theme.css" file (find: ".tt-logo img"). -->
+								<img src="images/my-images/landmark-logo.png" class="tt-logo-light magnetic-item"
+									alt="Logo">
+								<!-- logo light -->
+								<img src="assets/img/logo-dark.png" class="tt-logo-dark magnetic-item" alt="Logo">
+								<!-- logo dark -->
+							</a>
+						</div>
+						<!-- End logo -->
+
+					</div> <!-- /.tt-header-col -->
+
+					<div class="tt-header-col">
+
+						<!-- Begin mobile menu toggle button (for "tt-main-menu") -->
+						<div id="tt-m-menu-toggle-btn-wrap">
+							<div class="tt-m-menu-toggle-btn-text">
+								<span class="tt-m-menu-text-menu">Menu</span>
+								<span class="tt-m-menu-text-close">Close</span>
+							</div>
+							<div class="tt-m-menu-toggle-btn-holder">
+								<a href="#" class="tt-m-menu-toggle-btn magnetic-item"><span></span></a>
+							</div>
+						</div>
+						<!-- End mobile menu toggle button -->
+
+						<!-- Begin main menu (classic)
+							===============================
+							* Use class "tt-submenu-dark" to enable submenu dark style.
+							* Use class "tt-m-menu-center" to align mobile menu to center (no effect on desktop!).
+							-->
+						<nav class="tt-main-menu tt-submenu-dark tt-m-menu-center">
+							<div class="tt-main-menu-holder">
+								<div class="tt-main-menu-inner">
+									<div class="tt-main-menu-content">
+
+										<!-- Begin main menu list -->
+										<ul class="tt-main-menu-list">
+
+											<!-- <li><a href="">Single Link</a></li> -->
+
+											<!-- Begin submenu (submenu master)
+												==================================== -->
+											<li><a href="#">Home</a></li>
+											<li><a href="#">About</a></li>
+											<li><a href="#">Projects</a></li>
+											<!-- End submenu (sub-master) -->
+
+
+										</ul>
+										<!-- End main menu list -->
+
+									</div> <!-- /.tt-main-menu-content -->
+								</div> <!-- /.tt-main-menu-inner -->
+							</div> <!-- /.tt-main-menu-holder -->
+
+						</nav>
+						<!-- End main menu -->
+
+					</div> <!-- /.header-col -->
+				</div> <!-- /.header-inner -->
+			</header>
+			<!-- End header -->
+
+
+			<!-- *************************************
+				*********** Begin content wrap *********** 
+				************************************** -->
+			<div id="content-wrap">
+
+				<!-- *************************************
+					*********** Begin page content *********** 
+					************************************** -->
+				<div id="page-content">
+
+
+					<!-- ==================================================
+						///// Begin portfolio slider (full screen slider) /////
+						=======================================================
+						* Use class "cursor-drag-mouse-down" to enable cursor drag style on mouse down ("data-simulate-touch" attribute must be enabled!).
+						* Available data attributes:
+								data-speed="900"......................(milliseconds)
+								data-autoplay="5000"..................(milliseconds. Note: disabled after user first interactions)
+								data-mousewheel="true"................(true/false)
+								data-keyboard="true"..................(true/false)
+								data-simulate-touch="true"............(true/false)
+								data-grab-cursor="true"...............(true/false)
+								data-pagination-type="fraction".......(bullets/fraction/progressbar)
+								data-parallax-mouse-move="true".......(true/false)
+						-->
+					<div class="tt-portfolio-slider cursor-drag-mouse-down" data-speed="1000" data-mousewheel="false"
+						data-keyboard="true" data-simulate-touch="true" data-grab-cursor="true" data-autoplay="5000"
+						data-pagination-type="fraction" data-parallax-mouse-move="true">
+
+						<!-- Begin swiper container -->
+						<div class="swiper">
+
+							<!-- Begin swiper wrapper (required) -->
+							<div class="swiper-wrapper">
+
+								<!-- Begin swiper slide 
+									======================== 
+									* Change data attributes (data-url="...", data-title="...", data-category="...") according to your needs.
+									* Use class "psi-image-is-light" if needed, it makes the elements dark and more visible if you use a very light image.
+									-->
+								<div class="swiper-slide" data-url="single-project-1.html" data-title="Victorian Girls"
+									data-category="People">
+									<!-- Use class "cover-opacity-*" to set an image overlay if needed. For example "cover-opacity-2". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
+									<div class="tt-portfolio-slider-item cover-opacity-3" data-swiper-parallax="50%">
+										<img class="tt-psi-image swiper-lazy" src="images/low-qlt-thumb.jpg"
+											data-src="images/my-images/Hero01.jpg" alt="Image">
+									</div> <!-- /.tt-portfolio-slider-item -->
+								</div>
+								<!-- End swiper slide -->
+
+								<!-- Begin swiper slide 
+									======================== 
+									* Change data attributes (data-url="...", data-title="...", data-category="...") according to your needs.
+									* Use class "psi-image-is-light" if needed, it makes the elements dark and more visible if you use a very light image.
+									-->
+								<div class="swiper-slide" data-url="single-project-2.html" data-title="Smithy"
+									data-category="Creative">
+									<!-- Use class "cover-opacity-*" to set an image overlay if needed. For example "cover-opacity-2". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
+									<div class="tt-portfolio-slider-item cover-opacity-3" data-swiper-parallax="50%">
+										<img class="tt-psi-image swiper-lazy" src="assets/img/low-qlt-thumb.jpg"
+											data-src="images/my-images/Hero02.jpg" alt="Image">
+									</div> <!-- /.tt-portfolio-slider-item -->
+								</div>
+								<!-- End swiper slide -->
+
+								<!-- Begin swiper slide 
+									======================== 
+									* Change data attributes (data-url="...", data-title="...", data-category="...") according to your needs.
+									* Use class "psi-image-is-light" if needed, it makes the elements dark and more visible if you use a very light image.
+									-->
+								<div class="swiper-slide" data-url="single-project-2.html" data-title="Smithy"
+									data-category="Creative">
+									<!-- Use class "cover-opacity-*" to set an image overlay if needed. For example "cover-opacity-2". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
+									<div class="tt-portfolio-slider-item cover-opacity-3" data-swiper-parallax="50%">
+										<img class="tt-psi-image swiper-lazy" src="assets/img/low-qlt-thumb.jpg"
+											data-src="images/my-images/Hero03.jpg" alt="Image">
+									</div> <!-- /.tt-portfolio-slider-item -->
+								</div>
+								<!-- End swiper slide -->
+
+							</div>
+							<!-- End swiper wrapper -->
+
+						</div>
+						<!-- End swiper container -->
+
+
+
+						<!-- Begin portfolio slider caption
+							==================================== 
+							* Use class "psc-center" to align caption.
+							* Use class "psc-stroke" to enable caption title stroke style.
+							* Note: Titles and URLs are loaded from "swiper-slide" data attributes. Do not change them here!!!
+							-->
+						<div class="d-none tt-portfolio-slider-caption psc-center">
+							<!-- Disabled by "d-none" from styles.css -->
+							<div class="tt-ps-caption-inner">
+								<h2 class="tt-psc-elem tt-ps-caption-title"><a href="#"
+										data-cursor="View<br>Project"></a></h2>
+								<div class="tt-psc-elem tt-ps-caption-category"></div>
+							</div> <!-- /.tt-ps-caption-inner -->
+						</div>
+
+						<!-- End portfolio slider caption -->
+
+						<!-- Begin portfolio slider navigation 
+							======================================= -->
+						<div class="d-none tt-portfolio-slider-navigation tt-swiper-nav">
+							<!-- Disabled by "d-none" from styles.css -->
+							<div class="tt-ps-nav-prev">
+								<div class="tt-ps-nav-arrow tt-ps-nav-arrow-prev magnetic-item"></div>
+							</div>
+							<div class="tt-ps-nav-next">
+								<div class="tt-ps-nav-arrow tt-ps-nav-arrow-next magnetic-item"></div>
+							</div>
+							<div class="tt-ps-nav-pagination"></div>
+						</div>
+						<!-- End portfolio slider navigation -->
+
+					</div>
+					<!-- End portfolio slider -->
+
+					<!-- =======================
+						///// Begin tt-section /////
+						============================ 
+						* You can use padding classes if needed. For example "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom", etc. Note that each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
+						-->
+					<div style="background-image: url(images/my-images/about-home.png); background-size: cover;"
+						class="tt-section padding-top-xlg-150 padding-bottom-xlg-150">
+						<div class="tt-section-inner tt-wrap">
+
+							<!-- Begin tt-Heading 
+								====================== 
+								* Use class "tt-heading-xsm", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg" or "tt-heading-xxlg" to set caption size (no class = default size).
+								* Use class "tt-heading-stroke" to enable stroke style.
+								* Use class "tt-heading-center" to align tt-Heading to center.
+								* Use prepared helper class "max-width-*" to add custom width if needed. Example: "max-width-800". More info about helper classes can be found in the file "helper.css".
+								-->
+							<div
+								class="tt-heading tt-heading-xxlg tt-heading-stroke tt-heading-center margin-bottom-10-p anim-fadeinup">
+								<h2 class="tt-heading-subtitle text-gray text--md text--uppercase">Not all clubs require
+									membership cards, <br> Some Require Legacies</h2>
+								<!-- <h3 class="tt-heading-subtitle text-gray">Subtitle</h3> -->
+							</div>
+							<!-- End tt-Heading -->
+
+							<!-- Begin logo wall 
+								=====================
+								* Use class "cl-col-2", "cl-col-3" or "cl-col-4" to change columns.
+								* Hint: for better results make sure all your images are in the same dimensions!
+								-->
+							<ul class="tt-logo-wall cl-col-4 anim-fadeinup">
+								<li><a href="https://1.envato.market/tank" class="cursor-alter" target="_blank"
+										rel="noopener"><img class="img-200px" src="images/clients/client-1.png"
+											alt="Client"></a>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+								</li>
+								<li><a href="https://1.envato.market/tank" class="cursor-alter" target="_blank"
+										rel="noopener"><img class="img-200px" src="images/clients/client-2.png"
+											alt="Client"></a>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+								</li>
+								<li><a href="https://1.envato.market/tank" class="cursor-alter" target="_blank"
+										rel="noopener"><img class="img-200px" src="images/clients/client-3.png"
+											alt="Client"></a>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+								</li>
+								<li><a href="https://1.envato.market/tank" class="cursor-alter" target="_blank"
+										rel="noopener"><img class="img-200px" src="images/clients/client-4.png"
+											alt="Client"></a>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+								</li>
+
+
+
+								<!-- Use the below example if you want a list without links -->
+								<!-- <li><img src="assets/img/clients/client-1.png" alt="Client"></li> -->
+							</ul>
+							<!-- End logo wall -->
+
+						</div> <!-- /.tt-section-inner -->
+					</div>
+					<!-- End tt-section -->
+
+					<!-- ========================
+					///// Begin page header /////
+					============================= 
+					* Use class "ph-full" to enable fullscreen size.
+					* Use class "ph-cap-sm", "ph-cap-lg", "ph-cap-xlg" or "ph-cap-xxlg" to set caption size (no class = default size).
+					* Use class "ph-center" to enable content center position.
+					* Use class "ph-bg-image" to enable page header background image (required for a portfolio single project!).
+					* Use class "ph-bg-image-is-light" if needed, it makes the elements dark and more visible if you use a very light image (effect only with class "ph-bg-image").
+					* Use class "ph-image-shadow" to enable page header background image (effect only with class "ph-bg-image").
+					* Use class "ph-image-cropped" to crop image. It fixes image dimensions (no effect for "ph-bg-image"!).
+					* Use class "ph-image-cover-*" to set image overlay opacity. For example "ph-image-cover-2" or "ph-image-cover-2-5" (up to "ph-image-cover-9-5").
+					* Use class "ph-content-parallax" to enable content parallax.
+					* Use class "ph-stroke" to enable caption title stroke style.
+					-->
+					<div style="background-image: url(images/my-images/codename_without-text.png); background-size: cover;"
+						id="page-header"
+						class="ph-full ph-cap-sm ph-image-cropped ph-image-cover-3 ph-content-parallax">
+						<div class="page-header-inner tt-wrap">
+
+							<!-- Begin page header caption
+							=============================== 
+							Use class "max-width-*" to set caption max width if needed. For example "max-width-1000". More info about helper classes can be found in the file "helper.css".
+							-->
+							<div class="ph-caption text--center text--uppercase">
+								<h1 class="ph-caption-title ph-appea text--center font-normal">Millionaire's<br>Club
+								</h1>
+								<div class="ph-caption-title-ghost ph-appear left--0">Codename</div>
+								<!-- <div class="ph-caption-subtitle ph-appear">Subtitle</div> -->
+							</div>
+							<!-- End page header caption -->
+
+						</div> <!-- /.page-header-inner -->
+					</div>
+					<!-- End page header -->
+
+
+
+					<!-- ========================
+					///// Begin page header /////
+					============================= 
+					* Use class "ph-full" to enable fullscreen size.
+					* Use class "ph-cap-sm", "ph-cap-lg", "ph-cap-xlg" or "ph-cap-xxlg" to set caption size (no class = default size).
+					* Use class "ph-center" to enable content center position.
+					* Use class "ph-bg-image" to enable page header background image (required for a portfolio single project!).
+					* Use class "ph-bg-image-is-light" if needed, it makes the elements dark and more visible if you use a very light image (effect only with class "ph-bg-image").
+					* Use class "ph-image-shadow" to enable page header background image (effect only with class "ph-bg-image").
+					* Use class "ph-image-cropped" to crop image. It fixes image dimensions (no effect for "ph-bg-image"!).
+					* Use class "ph-image-cover-*" to set image overlay opacity. For example "ph-image-cover-2" or "ph-image-cover-2-5" (up to "ph-image-cover-9-5").
+					* Use class "ph-content-parallax" to enable content parallax.
+					* Use class "ph-stroke" to enable caption title stroke style.
+					-->
+					<div style="background-image: url(images/my-images/pool.png); background-size: cover;"
+						id="page-header"
+						class="ph-full ph-cap-sm ph-image-cropped ph-image-cover-3 ph-content-parallax">
+						<div class="page-header-inner tt-wrap">
+
+							<!-- Begin page header caption
+							=============================== 
+							Use class "max-width-*" to set caption max width if needed. For example "max-width-1000". More info about helper classes can be found in the file "helper.css".
+							-->
+							<div class="ph-caption tt-heading text--uppercase">
+								<h2 class="ph-caption-title ph-appea font-normal">Where Every<br>Day Feels
+								</h2>
+								<h1 class="ph-caption-title ph-appear">First Class</h1>
+								<h2 class="ph-caption-title ph-appea font-normal">infinity pool
+								</h2>
+								<div class="d-none ph-caption-title-ghost ph-appear left--0">Codename</div>
+								<!-- <div class="ph-caption-subtitle ph-appear">Subtitle</div> -->
+							</div>
+							<!-- End page header caption -->
+
+						</div> <!-- /.page-header-inner -->
+					</div>
+					<!-- End page header -->
+
+
+					<!-- =======================
+						///// Begin tt-section /////
+						============================ 
+						* You can use padding classes if needed. For example "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom", etc. Note that each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
+						-->
+					<div style="background-image: url(images/my-images/chess.png); background-size: contain; background-position: center;"
+						class="tt-section padding-top-xlg-150 padding-bottom-xlg-150">
+						<div class="tt-section-inner tt-wrap">
+
+							<!-- Begin tt-Heading 
+								====================== 
+								* Use class "tt-heading-xsm", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg" or "tt-heading-xxlg" to set caption size (no class = default size).
+								* Use class "tt-heading-stroke" to enable stroke style.
+								* Use class "tt-heading-center" to align tt-Heading to center.
+								* Use prepared helper class "max-width-*" to add custom width if needed. Example: "max-width-800". More info about helper classes can be found in the file "helper.css".
+								-->
+							<div
+								class="tt-heading tt-heading-xxlg tt-heading-stroke tt-heading-center margin-bottom-10-p anim-fadeinup">
+								<h2 class="tt-heading-subtitle text-gray text--uppercase">Built By
+									visionaries<br>Crafted For</h2>
+								<h2 class="tt-heading-subtitle text-gray text--md text--uppercase">Millionaires</h2>
+								<!-- <h3 class="tt-heading-subtitle text-gray">Subtitle</h3> -->
+							</div>
+							<!-- End tt-Heading -->
+
+							<!-- Begin logo wall 
+								=====================
+								* Use class "cl-col-2", "cl-col-3" or "cl-col-4" to change columns.
+								* Hint: for better results make sure all your images are in the same dimensions!
+								-->
+							<ul class="tt-logo-wall cl-col-2 anim-fadeinup">
+								<li>
+									<h1>15+ Years</h1>
+									<p>of Industry Experience</p>
+								</li>
+								<li>
+									<h1>10+ Lakh</h1>
+									<p>Delivered Accross Mumbai, <br>Navi Mumbai & Pune</p>
+								</li>
+
+
+
+								<!-- Use the below example if you want a list without links -->
+								<!-- <li><img src="assets/img/clients/client-1.png" alt="Client"></li> -->
+							</ul>
+							<!-- End logo wall -->
+
+						</div> <!-- /.tt-section-inner -->
+					</div>
+					<!-- End tt-section -->
+
+					<div class="tt-portfolio-slider cursor-drag-mouse-down" data-speed="1000" data-mousewheel="false"
+						data-keyboard="true" data-simulate-touch="true" data-grab-cursor="true" data-autoplay="5000"
+						data-pagination-type="fraction" data-parallax-mouse-move="true">
+						<!-- Begin swiper container -->
+						<div class="swiper">
+
+							<!-- Begin swiper wrapper (required) -->
+							<div class="swiper-wrapper">
+
+								<!-- Begin swiper slide 
+									======================== 
+									* Change data attributes (data-url="...", data-title="...", data-category="...") according to your needs.
+									* Use class "psi-image-is-light" if needed, it makes the elements dark and more visible if you use a very light image.
+									-->
+								<div class="swiper-slide" data-url="single-project-1.html">
+									<!-- Use class "cover-opacity-*" to set an image overlay if needed. For example "cover-opacity-2". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
+									<div class="tt-portfolio-slider-item cover-opacity-3" data-swiper-parallax="100%">
+										<img class="tt-psi-image swiper-lazy" src="images/low-qlt-thumb.jpg"
+											data-src="images/my-images/chess.png" alt="Image">
+									</div> <!-- /.tt-portfolio-slider-item -->
+								</div>
+								<!-- End swiper slide -->
+								<!-- Begin portfolio slider caption
+							==================================== 
+							* Use class "psc-center" to align caption.
+							* Use class "psc-stroke" to enable caption title stroke style.
+							* Note: Titles and URLs are loaded from "swiper-slide" data attributes. Do not change them here!!!
+							-->
+								<div class="d-non tt-portfolio-slider-caption psc-center">
+									<div class="tt-section-inner tt-wrap">
+
+										<!-- Begin tt-Heading 
+								====================== 
+								* Use class "tt-heading-xsm", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg" or "tt-heading-xxlg" to set caption size (no class = default size).
+								* Use class "tt-heading-stroke" to enable stroke style.
+								* Use class "tt-heading-center" to align tt-Heading to center.
+								* Use prepared helper class "max-width-*" to add custom width if needed. Example: "max-width-800". More info about helper classes can be found in the file "helper.css".
+								-->
+										<div
+											class="tt-heading tt-heading-xxlg tt-heading-stroke tt-heading-center margin-bottom-10-p anim-fadeinup">
+											<h2 class="tt-heading-subtitle text-gray text--uppercase">Built By
+												visionaries<br>Crafted For</h2>
+											<h2 class="tt-heading-subtitle text-gray text--md text--uppercase">
+												Millionaires</h2>
+											<!-- <h3 class="tt-heading-subtitle text-gray">Subtitle</h3> -->
+										</div>
+										<!-- End tt-Heading -->
+
+										<!-- Begin logo wall 
+								=====================
+								* Use class "cl-col-2", "cl-col-3" or "cl-col-4" to change columns.
+								* Hint: for better results make sure all your images are in the same dimensions!
+								-->
+										<ul class="tt-logo-wall cl-col-2 anim-fadeinup">
+											<li>
+												<h1>15+ Years</h1>
+												<p>of Industry Experience</p>
+											</li>
+											<li>
+												<h1>10+ Lakh</h1>
+												<p>Delivered Accross Mumbai, <br>Navi Mumbai & Pune</p>
+											</li>
+
+
+
+											<!-- Use the below example if you want a list without links -->
+											<!-- <li><img src="assets/img/clients/client-1.png" alt="Client"></li> -->
+										</ul>
+										<!-- End logo wall -->
+
+									</div> <!-- /.tt-section-inner -->
+								</div>
+
+								<!-- End portfolio slider caption -->
+
+							</div>
+							<!-- End swiper wrapper -->
+
+						</div>
+						<!-- End swiper container -->
+					</div>
+
+
+
+
+
+				</div>
+				<!-- End page content -->
+
+
+
+
+			</div>
+			<!-- End content wrap -->
+
+		</div>
+		<!-- End scroll container -->
+
+	</main>
+
+	<!-- Core JS -->
+	<script src="js/jquery/jquery.min.js"></script> <!-- jquery JS (https://jquery.com) -->
+
+	<!-- Libs and Plugins JS -->
+	<script src="js/gsap/gsap.min.js"></script> <!-- GSAP JS (https://greensock.com/gsap/) -->
+	<script src="js/gsap/ScrollToPlugin.min.js"></script>
+	<!-- GSAP ScrollToPlugin JS (https://greensock.com/scrolltoplugin/) -->
+	<script src="js/gsap/ScrollTrigger.min.js"></script>
+	<!-- GSAP ScrollTrigger JS (https://greensock.com/scrolltrigger/) -->
+
+	<script src="js/smooth-scrollbar.js"></script>
+	<!-- Smooth Scrollbar JS (https://github.com/idiotWu/smooth-scrollbar/) -->
+	<script src="js/swiper/js/swiper-bundle.min.js"></script> <!-- Swiper JS (https://swiperjs.com/) -->
+	<script src="js/isotope/imagesloaded.pkgd.min.js"></script>
+	<!-- imagesloaded JS (more info: https://imagesloaded.desandro.com/) -->
+	<script src="js/isotope/isotope.pkgd.min.js"></script> <!-- Isotope JS (http://isotope.metafizzy.co) -->
+	<script src="js/isotope/packery-mode.pkgd.min.js"></script>
+	<!-- Isotope Packery Mode JS (https://isotope.metafizzy.co/layout-modes/packery.html) -->
+	<script src="js/lightgallery/js/lightgallery-all.min.js"></script>
+	<!-- lightGallery Plugins JS (http://sachinchoolur.github.io/lightGallery) -->
+	<script src="js/jquery.mousewheel.min.js"></script>
+	<!-- A jQuery plugin that adds cross browser mouse wheel support (https://github.com/jquery/jquery-mousewheel) -->
+
+	<!-- Theme master JS -->
+	<script src="js/theme.js"></script>
+</body>
+
+</html>
