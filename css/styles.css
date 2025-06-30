@@ -2,7 +2,7 @@
 /* Resort Sans Bold */
 @font-face {
     font-family: 'Resort Sans';
-    src: url('/css/RESORT-SANSBOLD.TTF') format('truetype');
+    src: url('/css/resort-sansbold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -11,14 +11,15 @@
 /* Zalorine Regular */
 @font-face {
     font-family: 'Zalorine';
-    src: url('/css/ZALORINE.OTF') format('opentype');
+    src: url('/css/zalorine.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 body {
-    font-family: 'Zalorine', sans-serif;
+    font-family: 'Zalorine';
+    font-weight: lighter;
 }
 
 .h1,
@@ -66,17 +67,22 @@ h6,
 .tt-scrolling-text,
 #blog-list.bli-compact .bli-info::before,
 .blog-interactive-item::before {
-    font-family: 'Resort Sans', sans-serif;
+    font-family: 'Resort Sans';
     font-weight: bold;
+    font-feature-settings: "liga"0, "clig"0, "calt"0, "ss01"0, "ss02"0;
+    font-variant-ligatures: none;
 }
 
 .font-z {
-    font-family: 'Zalorine', sans-serif !important;
+    font-family: 'Zalorine' !important;
+    font-weight: lighter !important;
 }
 
 .font-r {
-    font-family: 'Resort Sans', sans-serif !important;
+    font-family: 'Resort Sans' !important;
     font-weight: bold !important;
+    font-feature-settings: "liga"0, "clig"0, "calt"0, "ss01"0, "ss02"0;
+    font-variant-ligatures: none;
 }
 
 /* _______________________________________________________________________ S T A R T -- H E R E _______________________________________________________________________________ */
@@ -109,25 +115,33 @@ h6,
     font-size: 7rem;
 }
 
+.text--hero {
+    font-size: 9rem;
+}
+
 @media (max-width: 767px) {
     .text--xsm {
         font-size: calc(24px + 0.1vw) !important;
     }
 
     .text--sm {
-        font-size: calc(32px + 0.1vw) !important;
+        font-size: calc(28px + 0.1vw) !important;
     }
 
     .text--md {
-        font-size: calc(40px + 0.1vw) !important;
+        font-size: calc(32px + 0.2vw) !important;
     }
 
     .text--lg {
-        font-size: calc(25px + 1.5vw) !important;
+        font-size: calc(36px + .5vw) !important;
     }
 
     .text--xl {
-        font-size: calc(32px + 1.5vw) !important;
+        font-size: calc(40px + 1vw) !important;
+    }
+
+    .text--hero {
+        font-size: calc(42px + 1.2vw) !important;
     }
 }
 
@@ -135,11 +149,25 @@ h6,
     text-transform: uppercase !important;
 }
 
+.img-250px {
+    width: 250px !important;
+    object-fit: contain;
+    object-position: center;
+    padding: 1.5rem;
+}
+
 .img-200px {
     width: 200px !important;
     object-fit: contain;
     object-position: center;
     padding: 1.5rem;
+}
+
+.img-150px {
+    width: 150px !important;
+    object-fit: contain;
+    object-position: center;
+    padding: 1.25rem;
 }
 
 .img-100px {
@@ -212,4 +240,47 @@ h6,
 
 .margin-top-25vh {
     margin-top: 25vh;
+}
+
+.px--1 {
+    padding-left: .25rem;
+    padding-right: .25rem;
+}
+
+.px--2 {
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+.px--3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.pl--1{
+    padding-left: .25rem;
+}
+
+.pl--2{
+    padding-left: .5rem;
+}
+
+.pl--3{
+    padding-left: 1rem;
+}
+
+.pb--0{
+    padding-bottom: 0px !important;
+}
+
+.mb--0{
+    margin-bottom: 0px !important;
+}
+
+.line-height-1_75{
+    line-height: 1.75rem !important;
+}
+
+.letter-spacing-sm{
+    letter-spacing: .2rem !important;
 }

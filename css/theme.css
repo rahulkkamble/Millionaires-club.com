@@ -6606,7 +6606,8 @@ video.tt-pn-video {
 	margin-left: -2px;
 	margin-bottom: -2px;
 	text-align: center;
-	border-width: 0 0 1px 1px;
+	border-width: 0 0 0 1px; 
+	/* border-width: 0 0 1px 1px; */
 	border-style: solid;
 	border-color: #212121;
 }
