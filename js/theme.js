@@ -847,9 +847,11 @@
 						// Portfolio slider caption title (if contains link or not)
 						if ($ttPortfolioSlider.find(".tt-ps-caption-title").find("a").length) {
 							$ttPortfolioSlider.find(".tt-ps-caption-title a").text($slideActive.attr("data-title"));
+							$ttPortfolioSlider.find(".tt-ps-caption-title data2 a").text($slideActive.attr("data-title2"));
 							$ttPortfolioSlider.find(".tt-ps-caption-title a").attr("href", $slideActive.attr("data-url"));
 						} else {
 							$ttPortfolioSlider.find(".tt-ps-caption-title").text($slideActive.attr("data-title"));
+							$ttPortfolioSlider.find(".tt-ps-caption-title data2").text($slideActive.attr("data-title2"));
 						}
 
 						// Portfolio slider caption category on load
@@ -906,9 +908,11 @@
 						// Portfolio slider caption title (if contains link or not)
 						if ($ttPortfolioSlider.find(".tt-ps-caption-title").find("a").length) {
 							$ttPortfolioSlider.find(".tt-ps-caption-title a").text($slideActive.attr("data-title"));
+							$ttPortfolioSlider.find(".tt-ps-caption-title data2 a").text($slideActive.attr("data-title2"));
 							$ttPortfolioSlider.find(".tt-ps-caption-title a").attr("href", $slideActive.attr("data-url"));
 						} else {
 							$ttPortfolioSlider.find(".tt-ps-caption-title").text($slideActive.attr("data-title"));
+							$ttPortfolioSlider.find(".tt-ps-caption-title data2").text($slideActive.attr("data-title2"));
 						}
 
 						// Portfolio slider caption category
