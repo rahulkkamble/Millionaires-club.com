@@ -2,7 +2,7 @@
 /* Resort Sans Bold */
 @font-face {
     font-family: 'Resort Sans';
-    src: url('/css/resort-sansbold.ttf') format('truetype');
+    src: url('resort-sansbold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -11,7 +11,7 @@
 /* Zalorine Regular */
 @font-face {
     font-family: 'Zalorine';
-    src: url('/css/zalorine.otf') format('opentype');
+    src: url('zalorine.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
