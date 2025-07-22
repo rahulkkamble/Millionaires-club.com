@@ -1,0 +1,129 @@
+:root {
+    --dark-blue: #111b37;
+    --secondary: white;
+    --primary: #dfb187;
+    --slate-grey: #9c9ca7;
+    --dark-card: #2b333d;
+    --blue-gray: #1c2745;
+    --black-footer-bottom: #111521;
+    --black-footer: #161b2b;
+    --blue: #101d41;
+}
+
+@keyframes logo-flip {
+    0% {
+        transform: rotateY(0deg);
+        opacity: 0;
+    }
+
+    50% {
+        transform: rotateY(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotateY(360deg);
+        opacity: 1;
+    }
+}
+
+.preloader-wrapper {
+    z-index: 999999;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    inset: 0%;
+}
+
+.preloader-right,
+.preloader-left {
+    background-color: black;
+    width: 50%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.preloader-right {
+    left: 0;
+}
+
+.preloader-left {
+    right: 0;
+}
+
+.preloader-logo-wrapper {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+    inset: 0;
+}
+
+.preloader-logo {
+    /* background-color: var(--blue); */
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    min-height: 203px;
+    display: flex;
+}
+
+.preloader-logo-icon {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 203px;
+    display: flex;
+}
+
+.preloader-logo-image {
+    object-fit: cover;
+    max-width: 204px;
+    max-height: 204px;
+    margin-bottom: 7.5px;
+    transform: rotateY(0deg);
+    opacity: 0;
+    animation: logo-flip 1.8s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+.preloader-logo-text {
+    /* background-image: linear-gradient(to right, var(--primary), #ffddb5); */
+    text-align: center;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.preloader-logo-text-small {
+    color: var(--slate-grey);
+    text-align: center;
+    font-size: 12px;
+    margin-left: 4px;
+}
+
+
+@media screen and (max-width: 991px) {
+    .preloader-wrapper {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .preloader-logo-text {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .preloader-logo-text-small {
+        font-size: 11px;
+    }
+}
