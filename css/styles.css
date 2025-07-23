@@ -295,3 +295,27 @@ h6,
 .letter-spacing-sm{
     letter-spacing: .2rem !important;
 }
+
+#scrollTopBtn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  border: 1px;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  display: none; /* Hidden by default */
+  transition: background-color 0.6s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+  background-color: whitesmoke;
+  color: black;
+}

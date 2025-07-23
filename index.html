@@ -306,27 +306,27 @@
 								* Hint: for better results make sure all your images are in the same dimensions!
 								-->
 							<ul class="tt-logo-wall cl-col-4 anim-fadeinup">
-								<li class="d-flex flex-column align-items-center justify-content-center"><a
-										href="#" onclick="event.preventDefault();" class="cursor-alter"><img class="img-250px"
+								<li class="d-flex flex-column align-items-center justify-content-center"><a href="#"
+										onclick="event.preventDefault();" class="cursor-alter"><img class="img-250px"
 											src="images/my-images/icons/swimming-pool.png" alt="Client"></a>
 									<p class="text--uppercase px--3 max-width-250 font-r margin-bottom-10">15+ World
 										class amenities</p>
 								</li>
-								<li class="d-flex flex-column align-items-center justify-content-center"><a
-										href="#" onclick="event.preventDefault();" class="cursor-alter"><img class="img-250px"
+								<li class="d-flex flex-column align-items-center justify-content-center"><a href="#"
+										onclick="event.preventDefault();" class="cursor-alter"><img class="img-250px"
 											src="images/my-images/icons/park.png" alt="Client"></a>
 									<p class="text--uppercase px--3 max-width-250 font-r margin-bottom-10">full
 										panaromic view of 350
 										acres of central park, Kharghar</p>
 								</li>
-								<li class="d-flex flex-column align-items-center justify-content-center"><a
-										href="#" onclick="event.preventDefault();" class="cursor-alter"><img class="img-250px"
+								<li class="d-flex flex-column align-items-center justify-content-center"><a href="#"
+										onclick="event.preventDefault();" class="cursor-alter"><img class="img-250px"
 											src="images/my-images/icons/parking.png" alt="Client"></a>
 									<p class="text--uppercase px--3 max-width-250 font-r margin-bottom-10">5 level of
 										podium parking</p>
 								</li>
-								<li class="d-flex flex-column align-items-center justify-content-center"><a
-										href="#" onclick="event.preventDefault();" class="cursor-alter"><img class="img-250px"
+								<li class="d-flex flex-column align-items-center justify-content-center"><a href="#"
+										onclick="event.preventDefault();" class="cursor-alter"><img class="img-250px"
 											src="images/my-images/icons/door.png" alt="Client"></a>
 									<p class="text--uppercase px--3 max-width-250 font-r margin-bottom-10">one floor
 										<br>one residence
@@ -1172,6 +1172,12 @@
 
 	</main>
 
+	<!-- Top Button -->
+
+	<button id="scrollTopBtn" title="Go to top">↑</button>
+
+	<!-- Top Button End -->
+
 	<!-- Core JS -->
 	<script src="js/jquery/jquery.min.js"></script> <!-- jquery JS (https://jquery.com) -->
 
@@ -1199,16 +1205,19 @@
 	<script src="js/theme.js"></script>
 
 	<!-- Preloader Script -->
-    <script>
-        $(document).ready(function () {
-            // Delay to simulate loading
-            setTimeout(function () {
-                $('.preloader-right').animate({ width: '0%' }, 600);
-                $('.preloader-left').animate({ width: '0%' }, 600);
-                $('.preloader-wrapper').fadeOut(600); //600
-            }, 2000); // 1000 Adjust delay as needed
-        });
-    </script>
+	<script>
+		$(document).ready(function () {
+			// Delay to simulate loading
+			console.log("Ready")
+			setTimeout(function () {
+				$('.preloader-right').animate({ width: '0%' }, 600);
+				$('.preloader-left').animate({ width: '0%' }, 600);
+				$('.preloader-wrapper').fadeOut(600); //600
+
+			}, 2000); // 1000 Adjust delay as needed
+
+		});
+	</script>
 
 </body>
 
