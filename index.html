@@ -817,9 +817,6 @@
 
 
 
-
-
-
 					<!-- ==================================================
 						///// Begin portfolio slider (full screen slider) /////
 						=======================================================
@@ -918,6 +915,7 @@
 					</div>
 
 
+					<!-- ************************** Contact us ********************************** -->
 					<!-- *************************************
 				*********** Begin content wrap *********** 
 				************************************** -->
@@ -938,7 +936,7 @@
 								<div class="tt-section-inner tt-wrap">
 
 									<div class="tt-row">
-										<div class="tt-col-lg-5 padding-right-lg-5-p">
+										<div class="tt-col-lg-6 padding-right-lg-5-p">
 
 											<!-- Begin tt-Heading 
 										====================== 
@@ -963,11 +961,16 @@
 												<li class="anim-fadeinup">
 													<span class="tt-ci-icon"><i
 															class="fas fa-map-marker-alt"></i></span>
-													121 street address
+													Site : Plot 253 to 256, Sector - 19, Kharghar
+												</li>
+												<li class="anim-fadeinup">
+													<span class="tt-ci-icon"><i
+															class="fas fa-map-marker-alt"></i></span>
+													Corp. Add : A-308 & 309, Shelton Sapphire, <br>Plot no - 18 & 19, Sector - 15, Near Session Court, CBD Belapur, 400614
 												</li>
 												<li class="anim-fadeinup">
 													<span class="tt-ci-icon"><i class="fas fa-phone"></i></span>
-													<a href="tel:+123456789000" class="tt-link">+(123) 456 789 000</a>
+													<a href="tel:+919820953333" class="tt-link">+(91) 98209 53333</a>
 												</li>
 												<li class="anim-fadeinup">
 													<span class="tt-ci-icon"><i class="fas fa-envelope"></i></span>
@@ -1002,7 +1005,7 @@
 
 										</div> <!-- /.tt-col -->
 
-										<div class="tt-col-lg-7">
+										<div class="tt-col-lg-6">
 
 											<!-- Begin form 
 										================ 
@@ -1161,6 +1164,8 @@
 					<!-- End content wrap -->
 
 					<!-- add content above -->
+					<!-- ************************** Contact us End ********************************** -->
+
 				</div>
 				<!-- End page content -->
 
@@ -1177,6 +1182,12 @@
 	<button id="scrollTopBtn" title="Go to top">↑</button>
 
 	<!-- Top Button End -->
+
+	<!-- Whatsapp btn -->
+	<a id="whatsappBtn" href="https://wa.me/919876543210" target="_blank" title="Chat on WhatsApp">
+		<img src="images/my-images/icons/whatsapp-2_white.png" alt="WhatsApp" />
+	</a>
+	<!-- Whatsapp btn End -->
 
 	<!-- Core JS -->
 	<script src="js/jquery/jquery.min.js"></script> <!-- jquery JS (https://jquery.com) -->
@@ -1216,6 +1227,15 @@
 
 			}, 2000); // 1000 Adjust delay as needed
 
+			// Scroll to top on click
+			$('#scrollTopBtn').on('click', function () {
+				console.log("clicked on scroll btn")
+				window.scrollTo({
+					top: 0,
+					behavior: 'smooth'
+				});
+				return false;
+			});
 		});
 	</script>
 

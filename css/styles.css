@@ -257,65 +257,107 @@ h6,
     padding-right: 1rem;
 }
 
-.pl--1{
+.pl--1 {
     padding-left: .25rem;
 }
 
-.pl--2{
+.pl--2 {
     padding-left: .5rem;
 }
 
-.pl--3{
+.pl--3 {
     padding-left: 1rem;
 }
 
-.pb--0{
+.pb--0 {
     padding-bottom: 0px !important;
 }
 
-.mb--0{
+.mb--0 {
     margin-bottom: 0px !important;
 }
-.line-height-3_5{
+
+.line-height-3_5 {
     line-height: 3.5rem !important;
 }
-.line-height-2_75{
+
+.line-height-2_75 {
     line-height: 2.75rem !important;
 }
-.line-height-2_25{
+
+.line-height-2_25 {
     line-height: 2.25rem !important;
 }
-.line-height-1_75{
+
+.line-height-1_75 {
     line-height: 1.75rem !important;
 }
 
-.line-height-1_1{
+.line-height-1_1 {
     line-height: 1rem !important;
 }
-.letter-spacing-sm{
+
+.letter-spacing-sm {
     letter-spacing: .2rem !important;
 }
 
 #scrollTopBtn {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  z-index: 9999;
-  background-color: black;
-  color: white;
-  border-radius: 50%;
-  border: 1px;
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
-  font-size: 24px;
-  cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-  display: none; /* Hidden by default */
-  transition: background-color 0.6s ease, color 0.3s ease, transform 0.3s ease;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 9999;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    border: 1px;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    display: block;
+    /* Hidden by default */
+    transition: background-color 0.6s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 #scrollTopBtn:hover {
-  background-color: whitesmoke;
-  color: black;
+    background-color: whitesmoke;
+    color: black;
 }
+
+/* whatsapp btn */
+#whatsappBtn {
+    position: fixed;
+    bottom: 24px;
+    right: 84px;
+    z-index: 999;
+    width: 48px;
+    height: 48px;
+    /* background-color: #25d366; */
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+#whatsappBtn:hover {
+    /* background-color: #1ebea5; */
+    transform: scale(1.1);
+}
+
+#whatsappBtn img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    filter: brightness(1) invert(0);
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+#whatsappBtn:hover img {
+    filter: brightness(1) invert(1);
+}
+
+/* whatsapp btn end */
